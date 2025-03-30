@@ -1,0 +1,123 @@
+/* Base Styles */
+:root {
+    /* Colors */
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Gray-500: hsl(0, 0%, 42%);
+    --Gray-950: hsl(0, 0%, 7%);
+    
+    /* Font */
+    --font-family: 'Figtree', sans-serif;
+    --font-size-paragraph: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-paragraph);
+    background-color: var(--Yellow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ensures it works well on all screen sizes */
+    padding: 20px;
+}
+
+.container {
+    max-width: 375px;
+    background-color: var(--White);
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 8px 8px 0px black; /* More subtle shadow */
+    text-align: center;
+}
+
+.hero-image {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* Category Badge */
+h2 {
+    width: 25%;
+    background-color: var(--Yellow);
+    padding: 5px 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: left;
+}
+
+/* Publish Date */
+time {
+    display: block; /* Ensures it stays on a new line */
+    margin: 10px 0;
+    color: var(--Gray-500);
+    font-size: 14px;
+    text-align: left;
+}
+
+/* Main Heading */
+h1 {
+    text-align: left;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+h1:hover {
+    color: var(--Yellow);
+    cursor: pointer;
+}
+
+/* Paragraph */
+p {
+    text-align: left;
+    margin: 10px 0;
+    color: var(--Gray-500);
+}
+
+/* Avatar & Name */
+.avatar-container {
+    display: flex;
+    align-items: center; /* Aligns items vertically */
+    gap: 10px; /* Spacing between avatar and name */
+    justify-content: flex-start; /* Left alignment */
+    margin-top: 15px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.name {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--Gray-950);
+}
+
+/* Footer Attribution */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    text-decoration: underline;
+}
